@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-Pepe perez
+<p>Pepe perez pallalalalallalalalala</p>
+<p>${empleado.getNombre()}</p>
 </body>
 </html>
