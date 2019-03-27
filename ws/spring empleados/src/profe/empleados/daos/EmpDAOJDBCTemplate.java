@@ -70,8 +70,9 @@ public class EmpDAOJDBCTemplate implements EmpDAO {
 
 	}
 	@Override
+	//@Transactional(propagation=Propagation.REQUIRED)
 	public void insertaEmpleados(List<Empleado> listaEmpleados) {
-		listaEmpleados.forEach(emp -> insertaEmpleado(emp));
+//		listaEmpleados.forEach(emp -> insertaEmpleado(emp));
 	}
 
 }

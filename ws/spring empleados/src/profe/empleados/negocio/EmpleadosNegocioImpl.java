@@ -28,7 +28,6 @@ public class EmpleadosNegocioImpl implements EmpNegocio{
 	}
 
 	
-	@Transactional(propagation=Propagation.REQUIRED)
 	public void insertaEmpleado(Empleado emp) {
 		dao.insertaEmpleado(emp);
 	}
@@ -42,8 +41,9 @@ public class EmpleadosNegocioImpl implements EmpNegocio{
 	}
 
 	
+	@Transactional(propagation=Propagation.REQUIRED)
 	public void insertaEmpleados(List<Empleado> listaEmpleados) {
 
-		listaEmpleados.forEach(emp -> insertaEmpleado(emp));
+		listaEmpleados.forEach(emp -> dao.insertaEmpleado(emp));
 	}
 }

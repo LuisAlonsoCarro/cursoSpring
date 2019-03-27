@@ -1,0 +1,6 @@
+PROPAGATION_REQUIRED – Es la que viene por defecto, así que no es necesaria especificarla. Si existe transacción la aprovecha y sino la crea
+REQUIRES_NEW – Abre una transacción nueva y pone en suspenso la anterior. Una vez el método marcado como REQUIRES_NEW termina se vuelve a la transacción anterior.
+PROPAGATION_SUPPORTS – Si existe transacción la aprovecha, sino no crea ninguna.
+PROPAGATION_MANDATORY – Si no existe una transacción abierta se lanza una excepción. Hay gente que anota sus DAO con esta opción.
+PROPAGATION_NEVER – Si existe una transacción abierta se lanza una excepción. No se me ocurre ningún ejemplo donde esto sea necesario pero seguro que alguno hay.
+PROPAGATION_NOT_SUPPORTED – Si existe una transacción la pone en suspenso, la transacción se reactiva al salir del método.
