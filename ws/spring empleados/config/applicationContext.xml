@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
         
 	<import resource="beans-empleados.xml"/>
- 
+<!-- 	<import resource="beans-empleados-datos.xml"/> -->
  	<mvc:annotation-driven />
  	
 	<bean id="viewResolver"
