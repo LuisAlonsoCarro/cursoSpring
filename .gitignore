@@ -1,0 +1,5 @@
+/.gitignore.txt
+
+*.class
+../target
+ws/.metadata/*
