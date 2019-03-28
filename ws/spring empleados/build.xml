@@ -41,10 +41,10 @@
 
 <!--		<copy todir="${build.dir}/WEB-INF/classes/resources">
 			<fileset dir="resources"/>
-		</copy>
+		</copy>-->
 		<copy todir="${build.dir}">
 			<fileset dir="html" />
-		</copy>-->
+		</copy>
 	</target>
 	
 	<target name="empaqueta" depends="copia" description="Empaqueta todos los contenidos">
