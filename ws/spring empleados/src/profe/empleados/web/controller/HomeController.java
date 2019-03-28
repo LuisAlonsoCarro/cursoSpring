@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import profe.empleados.negocio.EmpNegocio;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/gestEmpleados")
 public class HomeController {
 
 	@Autowired
 	private EmpNegocio empNegocio;
 	
-	@RequestMapping("saludos")
-	public String home(@RequestParam String cif, Model model)
+//	@RequestMapping("saludos")
+	public String muestraFormulario()
 	{
 		
-		model.addAttribute("empleado", empNegocio.getEmpleado(cif));
-		return "index";
+//		model.addAttribute("empleado", empNegocio.getEmpleado(cif));
+		return "empleados";
 	}
 }
